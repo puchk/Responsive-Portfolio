@@ -1,0 +1,354 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background: url("../images/background.png");
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	color: #777777;
+	line-height: 34px;
+	overflow: auto;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+/*Shared*/
+
+.wrap {
+	min-width: 960px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.mainContentBorder {
+	border: 1px solid #dddddd;
+}
+
+/*Header*/
+
+.header {
+	width: 100%;
+	height: 90px;
+	background: #ffffff;
+	border-bottom: 2px solid #cccccc;
+	margin-bottom: 40px;
+	
+}
+
+/*Header Title*/
+
+.headerTitle {
+	width: 335px;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	background: #4aaaa5;
+	float: left;
+	text-decoration: none;
+}
+
+/*Header Nav*/
+
+.nav {
+	float: right;
+}
+
+.linkLayout {
+	display: inline-block;
+	margin-top: 35px;
+	margin-left: 15px;
+	padding-left: 15px;
+	text-decoration: none;
+	border-left: 2px solid #efefef;
+	line-height: 18px;
+	vertical-align: middle;
+}
+
+#aboutLinkBorder {
+	border-left: none;
+}
+
+.navLink:link {
+	color: #777777;
+	text-decoration: none;
+}
+
+.navLink:visited {
+	color: #777777;
+}
+
+/*Article*/
+
+.article {
+	width: 650px;
+	height: 480px;
+	background: #ffffff;
+	padding: 40px 30px;
+	margin-bottom: 40px;
+	float: left;
+	overflow: auto;
+}
+
+.articleTitle {
+	color: #4aaaa5;
+	padding-bottom: 30px
+}
+
+.articleHr {
+	border: 2px solid rgb(220,220,220);
+}
+
+.articleSection {
+	padding-top: 30px;
+}
+
+.selfie {
+	width: 200px;
+	height: 150px;
+	margin-right: 25px;
+}
+
+/*Contact Article*/
+
+.inputText {
+	width: 100%;
+}
+
+.textArea {
+	height: 80px;
+}
+
+/*Portfolio Article*/
+
+.portfolioDescription {
+	width: 270px;
+	height: 200px;
+	margin-bottom: 55px;
+}
+
+.portfolioPics {
+	width: 270px;
+	height: 200px;
+	position: relative;
+}
+
+.leftPortfolio {
+	float: left;
+}
+
+.rightPortfolio {
+	float: right;
+}
+
+figcaption {
+	background-color: #4aaaa5;
+	color: white;
+	width: 270px;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 24px;
+	float: left;
+	position: relative;
+	bottom: 70px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	margin-top: -10px;
+	}
+/*Aside*/
+
+.aside {
+	width: 270px;
+	height: 200px;
+	background: #ffffff;
+	padding: 30px 30px 40px 30px;
+	margin-bottom: 40px;
+	float: right;
+	text-align: center;
+}
+
+.asideTitle {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 22px;
+	font-weight: bolder;
+	color: #4aaaa5;
+	margin-bottom: 20px;
+}
+
+.asideHr {
+	border: 1px solid rgb(220,220,220);
+}
+
+.icon {
+	width: 62px;
+	height: 62px;
+	margin-top: 25px;
+}
+
+/*Footer*/
+
+.footer {
+  padding: 30px 0;
+  margin-top: 100px;
+  clear: both;
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+	.wrap {
+		min-width: 768px;
+		width: 768px;
+	}
+	.article {
+		width: 420px;
+	}
+
+	/*Portfolio Article*/
+		.portfolioDescription {
+			width: 100%;
+			height: 270px;
+			margin-bottom: 55px;
+		}
+
+		.portfolioPics {
+			width: 100%;
+			height: 270px;
+			position: relative;
+		}
+
+	figcaption {
+		width: 100%;
+		}
+	}
+
+@media screen and (max-width: 768px) {
+	.wrap {
+		min-width: 640px;
+		width: 640px;
+	}
+	.article {
+		width: 100%;
+		min-width: 420px;
+	}
+	.selfie {
+		width: 335px;
+		height: 250px;
+	}
+	.aside {
+		width: 100%;
+		height: 200px;
+		text-align: left;
+	}
+	.footer {
+		position: static;
+		width: 100%;
+	}
+
+/*Portfolio Article*/
+
+.portfolioDescription {
+	width: 270px;
+	height: 200px;
+}
+
+.portfolioPics {
+	width: 270px;
+	height: 200px;
+}	
+}
+
+@media screen and (max-width: 640px) {
+	.wrap {
+		min-width: 600px;
+		width: 600px;
+	}
+	.header {	
+		height: auto;
+	}
+	.headerTitle{
+		width: 100%;
+	}
+	.nav {
+		width: 100%;
+		height: 65px;
+		line-height: 65px;
+		vertical-align: middle;
+		text-align: center;
+		background: #ffffff;
+	}
+	.linkLayout {
+		margin-top: 0;
+	}
+	#aboutLinkBorder {
+		margin-left: 0;
+		padding-left: 0;
+	}
+	.article {
+		width: 100%;
+		height: auto;
+		margin-top: 20px;
+	}
+	.selfie {
+		width: 100%;
+		height: auto;
+		margin-bottom: 15px;
+	}
+	.aside {
+		width: 100%;
+		text-align: left;
+		margin-bottom: 40px;
+	}
+	.footer {
+		min-width: 610px;
+		width: 610px;
+	}
+	/*Portfolio Article*/
+
+.portfolioDescription {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 55px;
+}
+
+.portfolioPics {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+.leftPortfolio {
+	clear: both;
+}
+
+.rightPortfolio {
+	clear: both;
+}
+
+figcaption {
+	width: 100%;
+	}
+
+}
